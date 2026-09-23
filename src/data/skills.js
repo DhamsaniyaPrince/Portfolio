@@ -1,0 +1,75 @@
+export const fullStackSkills = {
+  id: "full-stack",
+  title: "Full-Stack Development",
+  headline: "Core Technical Stack (MERN)",
+  description:
+    "Architecting full-stack web applications from responsive frontends to scalable RESTful backend services, database schemas, and authenticated workflows.",
+  featuredCore: [
+    { name: "React.js", category: "Frontend Core", highlight: true },
+    { name: "Node.js", category: "Runtime Environment", highlight: true },
+    { name: "Express.js", category: "Backend Framework", highlight: true },
+    { name: "MongoDB", category: "NoSQL Database", highlight: true },
+  ],
+  skills: [
+    "React.js",
+    "JavaScript (ES6+)",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "JWT",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+    "HTML5",
+    "CSS3",
+  ],
+  accent: "cyan",
+};
+
+export const secondarySkills = [
+  {
+    id: "qa-testing",
+    title: "QA & Testing",
+    badge: "Supporting Discipline",
+    description:
+      "Applying structured quality assurance, comprehensive test design, and API validation to ensure software reliability.",
+    skills: [
+      "Manual Testing",
+      "SDLC",
+      "STLC",
+      "Test Cases",
+      "Bug Life Cycle",
+      "Regression Testing",
+      "Smoke Testing",
+      "Sanity Testing",
+      "API Testing",
+      "Postman",
+      "Selenium",
+      "Playwright",
+      "Jira",
+    ],
+    accent: "purple",
+    linkText: "Explore QA Knowledge →",
+    targetPage: "qa",
+  },
+  {
+    id: "ui-ux",
+    title: "UI/UX Design",
+    badge: "Supporting Discipline",
+    description:
+      "Crafting intuitive user flows, clear visual hierarchy, responsive wireframes, and interactive prototypes in Figma.",
+    skills: [
+      "Figma",
+      "Wireframing",
+      "Prototyping",
+      "User Flows",
+      "Usability",
+      "UI Design",
+      "Responsive Design",
+    ],
+    accent: "pink",
+    linkText: "Explore UI/UX Work →",
+    targetPage: "ui-ux",
+  },
+];

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#14182b"/>
+      <stop offset="100%" stop-color="#080c18"/>
+    </linearGradient>
+    <pattern id="gridPattern4" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bgGrad4)"/>
+  <rect width="800" height="480" fill="url(#gridPattern4)"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="220" r="170" fill="#f43f5e" opacity="0.07" filter="blur(60px)"/>
+
+  <!-- Window Frame -->
+  <g transform="translate(60, 50)">
+    <rect width="680" height="370" rx="14" fill="#0d1326" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    <rect width="680" height="44" rx="14" fill="#111832"/>
+    <rect y="30" width="680" height="14" fill="#111832"/>
+    <line x1="0" y1="44" x2="680" y2="44" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Traffic Lights -->
+    <circle cx="28" cy="22" r="5" fill="#ef4444" opacity="0.75"/>
+    <circle cx="46" cy="22" r="5" fill="#f59e0b" opacity="0.75"/>
+    <circle cx="64" cy="22" r="5" fill="#10b981" opacity="0.75"/>
+
+    <rect x="100" y="12" width="480" height="20" rx="6" fill="#1e293b" opacity="0.6"/>
+    <text x="340" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">airbnb-frontend-clone.local</text>
+
+    <!-- Content -->
+    <g transform="translate(35, 62)">
+      <!-- Navbar Recreation -->
+      <g transform="translate(0, 0)">
+        <circle cx="16" cy="14" r="10" fill="#f43f5e"/>
+        <text x="36" y="18" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">stayhaven</text>
+
+        <!-- Search pill recreation -->
+        <rect x="180" y="0" width="240" height="28" rx="14" fill="#1a233f" stroke="rgba(255, 255, 255, 0.1)"/>
+        <text x="210" y="18" fill="#94a3b8" font-size="10">Anywhere · Any week · Add guests</text>
+        <circle cx="406" cy="14" r="10" fill="#f43f5e"/>
+      </g>
+
+      <!-- Category Filter Pills -->
+      <g transform="translate(0, 42)">
+        <rect width="70" height="20" rx="10" fill="rgba(255, 255, 255, 0.08)"/>
+        <text x="35" y="14" fill="#ffffff" font-size="9" text-anchor="middle">Cabins</text>
+
+        <rect x="80" width="70" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)"/>
+        <text x="115" y="14" fill="#94a3b8" font-size="9" text-anchor="middle">Beachfront</text>
+
+        <rect x="160" width="70" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)"/>
+        <text x="195" y="14" fill="#94a3b8" font-size="9" text-anchor="middle">Lakefront</text>
+
+        <rect x="240" width="70" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)"/>
+        <text x="275" y="14" fill="#94a3b8" font-size="9" text-anchor="middle">Mansions</text>
+      </g>
+
+      <!-- Property Grid -->
+      <g transform="translate(0, 78)">
+        <!-- Property 1 -->
+        <rect width="190" height="195" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.06)"/>
+        <rect x="12" y="12" width="166" height="105" rx="8" fill="#1b2548"/>
+        <!-- Star rating -->
+        <text x="12" y="134" fill="#ffffff" font-weight="600" font-size="12">Manali Mountain Retreat</text>
+        <text x="12" y="148" fill="#94a3b8" font-size="10">Mountain &amp; valley views</text>
+        <text x="12" y="162" fill="#64748b" font-size="10">Oct 12 – 17</text>
+        <text x="12" y="184" fill="#38bdf8" font-weight="700" font-size="12">₹4,250 <tspan fill="#64748b" font-weight="400">night</tspan></text>
+
+        <!-- Property 2 -->
+        <g transform="translate(210, 0)">
+          <rect width="190" height="195" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.06)"/>
+          <rect x="12" y="12" width="166" height="105" rx="8" fill="#1b2548"/>
+          <text x="12" y="134" fill="#ffffff" font-weight="600" font-size="12">Goa Beachfront Villa</text>
+          <text x="12" y="148" fill="#94a3b8" font-size="10">10 steps to the beach</text>
+          <text x="12" y="162" fill="#64748b" font-size="10">Nov 2 – 7</text>
+          <text x="12" y="184" fill="#38bdf8" font-weight="700" font-size="12">₹8,500 <tspan fill="#64748b" font-weight="400">night</tspan></text>
+        </g>
+
+        <!-- Property 3 -->
+        <g transform="translate(420, 0)">
+          <rect width="190" height="195" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.06)"/>
+          <rect x="12" y="12" width="166" height="105" rx="8" fill="#1b2548"/>
+          <text x="12" y="134" fill="#ffffff" font-weight="600" font-size="12">Udaipur Heritage Suite</text>
+          <text x="12" y="148" fill="#94a3b8" font-size="10">Lake Pichola view</text>
+          <text x="12" y="162" fill="#64748b" font-size="10">Dec 5 – 10</text>
+          <text x="12" y="184" fill="#38bdf8" font-weight="700" font-size="12">₹6,800 <tspan fill="#64748b" font-weight="400">night</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

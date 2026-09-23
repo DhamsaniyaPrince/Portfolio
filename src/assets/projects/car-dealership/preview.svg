@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#11192e"/>
+      <stop offset="100%" stop-color="#070a13"/>
+    </linearGradient>
+    <pattern id="gridPattern3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bgGrad3)"/>
+  <rect width="800" height="480" fill="url(#gridPattern3)"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="220" r="170" fill="#6366f1" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Window Frame -->
+  <g transform="translate(60, 50)">
+    <rect width="680" height="370" rx="14" fill="#0c1224" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    <rect width="680" height="44" rx="14" fill="#111830"/>
+    <rect y="30" width="680" height="14" fill="#111830"/>
+    <line x1="0" y1="44" x2="680" y2="44" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Traffic Lights -->
+    <circle cx="28" cy="22" r="5" fill="#ef4444" opacity="0.75"/>
+    <circle cx="46" cy="22" r="5" fill="#f59e0b" opacity="0.75"/>
+    <circle cx="64" cy="22" r="5" fill="#10b981" opacity="0.75"/>
+
+    <rect x="100" y="12" width="480" height="20" rx="6" fill="#1e293b" opacity="0.6"/>
+    <text x="340" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">github.com/DhamsaniyaPrince/Car-Dealership</text>
+
+    <!-- Main Content -->
+    <g transform="translate(35, 65)">
+      <!-- Header -->
+      <text x="0" y="22" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="17">Vehicle Dealership Inventory Platform</text>
+      <text x="0" y="44" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">TypeScript · Express.js · Prisma ORM · SQLite · React · Vite</text>
+
+      <!-- Vehicle Card Grid -->
+      <g transform="translate(0, 60)">
+        <!-- Card 1 -->
+        <rect width="190" height="210" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.08)"/>
+        <rect x="15" y="15" width="160" height="95" rx="6" fill="#1c274c"/>
+        <!-- Stylized car outline icon/shape -->
+        <path d="M 45 75 Q 55 55 80 50 L 110 50 Q 135 55 145 75 Z" fill="none" stroke="#6366f1" stroke-width="2"/>
+        <circle cx="65" cy="78" r="7" fill="#38bdf8"/>
+        <circle cx="125" cy="78" r="7" fill="#38bdf8"/>
+        <text x="15" y="132" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">Porsche 911 Carrera</text>
+        <text x="15" y="148" fill="#94a3b8" font-size="10">2024 · 3.0L Twin-Turbo</text>
+        <text x="15" y="174" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14">$114,400</text>
+        <rect x="15" y="186" width="60" height="14" rx="4" fill="rgba(16, 185, 129, 0.15)"/>
+        <text x="22" y="196" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8">IN STOCK</text>
+
+        <!-- Card 2 -->
+        <g transform="translate(210, 0)">
+          <rect width="190" height="210" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.08)"/>
+          <rect x="15" y="15" width="160" height="95" rx="6" fill="#1c274c"/>
+          <path d="M 45 75 Q 55 55 80 50 L 110 50 Q 135 55 145 75 Z" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+          <circle cx="65" cy="78" r="7" fill="#a855f7"/>
+          <circle cx="125" cy="78" r="7" fill="#a855f7"/>
+          <text x="15" y="132" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">BMW M4 Competition</text>
+          <text x="15" y="148" fill="#94a3b8" font-size="10">2023 · 503 HP Inline-6</text>
+          <text x="15" y="174" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14">$78,600</text>
+          <rect x="15" y="186" width="60" height="14" rx="4" fill="rgba(16, 185, 129, 0.15)"/>
+          <text x="22" y="196" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8">IN STOCK</text>
+        </g>
+
+        <!-- Card 3 -->
+        <g transform="translate(420, 0)">
+          <rect width="190" height="210" rx="10" fill="#141c38" stroke="rgba(255, 255, 255, 0.08)"/>
+          <rect x="15" y="15" width="160" height="95" rx="6" fill="#1c274c"/>
+          <path d="M 45 75 Q 55 55 80 50 L 110 50 Q 135 55 145 75 Z" fill="none" stroke="#06b6d4" stroke-width="2"/>
+          <circle cx="65" cy="78" r="7" fill="#38bdf8"/>
+          <circle cx="125" cy="78" r="7" fill="#38bdf8"/>
+          <text x="15" y="132" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">Audi RS e-tron GT</text>
+          <text x="15" y="148" fill="#94a3b8" font-size="10">2024 · All-Electric</text>
+          <text x="15" y="174" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14">$106,500</text>
+          <rect x="15" y="186" width="60" height="14" rx="4" fill="rgba(245, 158, 11, 0.15)"/>
+          <text x="22" y="196" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8">RESERVED</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
