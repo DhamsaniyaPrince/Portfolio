@@ -37,7 +37,7 @@ export default function SceneResume() {
             <button
               onClick={() => navigateTo('resume')}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono font-semibold text-slate-300 hover:text-white bg-slate-900 border border-white/10 hover:border-cyan-400 transition-all"
-              data-cursor="magnetic"
+
             >
               <span>OPEN FULL RESUME HUB</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-cyan-400" />
@@ -71,7 +71,7 @@ export default function SceneResume() {
                         : 'bg-slate-900/90 border-purple-400 shadow-xl shadow-purple-500/10'
                       : 'bg-slate-950/60 border-white/10 hover:border-white/20'
                   }`}
-                  data-cursor="pointer"
+
                 >
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
@@ -121,7 +121,6 @@ export default function SceneResume() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.35 }}
               className="relative w-full max-w-md p-6 sm:p-8 rounded-3xl bg-slate-900/95 border border-white/20 shadow-2xl backdrop-blur-xl flex flex-col justify-between aspect-[1/1.3] group"
-              data-cursor="pointer"
             >
               {/* Document Sheet Graphic Header */}
               <div>
@@ -190,7 +189,7 @@ export default function SceneResume() {
                   <button
                     onClick={() => navigateTo('resume')}
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-mono font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-md"
-                    data-cursor="magnetic"
+      
                   >
                     <span>Inspect Profile</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

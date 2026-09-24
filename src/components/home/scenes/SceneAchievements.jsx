@@ -80,7 +80,6 @@ export default function SceneAchievements() {
                   transition: { type: 'spring', stiffness: 350, damping: 20 },
                 }}
                 className="group relative cursor-default"
-                data-cursor="pointer"
               >
                 {/* Physical Tactile Sticker Card */}
                 <div

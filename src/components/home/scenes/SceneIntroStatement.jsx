@@ -102,7 +102,7 @@ export default function SceneIntroStatement() {
                 <button
                   onClick={() => navigateTo('qa')}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-semibold text-purple-400 bg-purple-950/40 border border-purple-500/30 hover:border-purple-400 transition-colors"
-                  data-cursor="magnetic"
+
                 >
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span>Explore QA &amp; Testing Route</span>
@@ -114,7 +114,7 @@ export default function SceneIntroStatement() {
                 <button
                   onClick={() => navigateTo('ui-ux')}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-semibold text-pink-400 bg-pink-950/40 border border-pink-500/30 hover:border-pink-400 transition-colors"
-                  data-cursor="magnetic"
+
                 >
                   <Palette className="w-3.5 h-3.5" />
                   <span>Explore UI/UX Route</span>

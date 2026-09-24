@@ -35,7 +35,6 @@ export default function Magnetic({ children, strength = 0.25, className = '' }) 
       onMouseLeave={handleMouseLeave}
       style={{ x, y }}
       className={`inline-block ${className}`}
-      data-cursor="magnetic"
     >
       {children}
     </motion.div>

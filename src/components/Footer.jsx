@@ -55,7 +55,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="p-2 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-white hover:border-white/20 transition-colors"
+                className="w-9 h-9 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-white hover:border-white/20 transition-colors flex items-center justify-center shrink-0"
               >
                 <Github className="w-4 h-4" />
               </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="p-2 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-sky-400 hover:border-sky-500/30 transition-colors"
+                className="w-9 h-9 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-sky-400 hover:border-sky-500/30 transition-colors flex items-center justify-center shrink-0"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
@@ -73,7 +73,7 @@ export default function Footer() {
               <a
                 href={`mailto:${contactConfig.email}`}
                 aria-label="Send Email"
-                className="p-2 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-cyan-400 hover:border-cyan-500/30 transition-colors"
+                className="w-9 h-9 rounded-xl bg-slate-900 border border-white/[0.08] text-slate-400 hover:text-cyan-400 hover:border-cyan-500/30 transition-colors flex items-center justify-center shrink-0"
               >
                 <Mail className="w-4 h-4" />
               </a>

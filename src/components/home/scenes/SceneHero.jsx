@@ -170,7 +170,6 @@ export default function SceneHero() {
                 <button
                   onClick={scrollToWork}
                   className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40"
-                  data-cursor="magnetic"
                 >
                   <span>Explore Work</span>
                   <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-1" />
@@ -181,33 +180,32 @@ export default function SceneHero() {
                 <button
                   onClick={() => navigateTo('home', 'contact')}
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-white/10 hover:border-slate-500 transition-all hover:text-white"
-                  data-cursor="magnetic"
                 >
                   <span>Get In Touch</span>
                 </button>
               </Magnetic>
 
               {/* Quick Social Channels */}
-              <div className="flex items-center gap-2 ml-1">
-                <Magnetic strength={0.3}>
+              <div className="flex items-center gap-2.5 ml-1">
+                <Magnetic strength={0.25}>
                   <a
                     href={contactConfig.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub Profile"
-                    className="p-3 rounded-full text-slate-400 hover:text-white bg-slate-900/60 border border-white/10 hover:border-white/30 transition-colors"
+                    className="w-11 h-11 rounded-full flex items-center justify-center text-slate-400 hover:text-white bg-slate-900/80 border border-white/10 hover:border-white/30 transition-colors"
                   >
                     <Github className="w-4 h-4" />
                   </a>
                 </Magnetic>
 
-                <Magnetic strength={0.3}>
+                <Magnetic strength={0.25}>
                   <a
                     href={contactConfig.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn Profile"
-                    className="p-3 rounded-full text-slate-400 hover:text-sky-400 bg-slate-900/60 border border-white/10 hover:border-sky-500/30 transition-colors"
+                    className="w-11 h-11 rounded-full flex items-center justify-center text-slate-400 hover:text-sky-400 bg-slate-900/80 border border-white/10 hover:border-sky-500/30 transition-colors"
                   >
                     <Linkedin className="w-4 h-4" />
                   </a>
@@ -216,15 +214,13 @@ export default function SceneHero() {
             </motion.div>
           </motion.div>
 
-          {/* Asymmetric Personal Portrait Layer (Parallax Depth + Lens Cursor) */}
+          {/* Asymmetric Personal Portrait Layer (Parallax Depth) */}
           <motion.div
             style={{ x: portraitX, y: portraitY }}
             className="lg:col-span-5 flex justify-center lg:justify-end z-10"
           >
             <div
-              className="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[4/5] group cursor-none"
-              data-cursor="lens"
-              data-cursor-text="PD // 2026"
+              className="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[4/5] group"
             >
               {/* Soft ambient cyan aura */}
               <div className="absolute inset-0 bg-cyan-500/15 rounded-3xl blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 pointer-events-none" />
