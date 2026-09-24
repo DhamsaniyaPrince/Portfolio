@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { NavigationProvider, useNavigation } from './context/NavigationContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CustomCursor from './components/common/CustomCursor';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import QAPage from './pages/QAPage';
@@ -35,6 +36,9 @@ function AppContent() {
       {/* Top subtle light effect */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-48 bg-cyan-500/5 blur-[120px] pointer-events-none -z-10" />
 
+      {/* Interactive Global Custom Cursor System */}
+      <CustomCursor />
+
       {/* Global Sticky Navigation */}
       <Navbar />
 
@@ -53,8 +57,8 @@ function AppContent() {
         </AnimatePresence>
       </main>
 
-      {/* Dedicated Comprehensive Footer */}
-      <Footer />
+      {/* Footer rendered on dedicated sub-pages */}
+      {currentPage !== 'home' && <Footer />}
     </div>
   );
 }
