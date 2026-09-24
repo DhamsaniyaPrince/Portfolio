@@ -4,6 +4,11 @@ import { X, ExternalLink, Github, CheckCircle2, Users, Layers, Sparkles } from '
 
 export default function ProjectModal({ project, isOpen, onClose }) {
   const modalRef = useRef(null);
+  const [modalScreenIndex, setModalScreenIndex] = React.useState(0);
+
+  useEffect(() => {
+    setModalScreenIndex(0);
+  }, [project]);
 
   // Close on Escape key and trap body scroll
   useEffect(() => {
@@ -30,6 +35,10 @@ export default function ProjectModal({ project, isOpen, onClose }) {
   }, [isOpen, onClose]);
 
   if (!project) return null;
+
+  const screens = project.screens || [];
+  const currentImage = screens.length > 0 ? screens[modalScreenIndex]?.image || project.image : project.image;
+  const currentTitle = screens.length > 0 ? screens[modalScreenIndex]?.title || project.title : project.title;
 
   return (
     <AnimatePresence>
@@ -70,27 +79,46 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               <X className="w-5 h-5" />
             </button>
 
-            {/* Project Image Banner */}
+            {/* Project Image Banner with Multi-Screen Viewer */}
             <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] bg-slate-950 overflow-hidden border-b border-white/[0.08] flex items-center justify-center">
               <img
-                src={project.image}
-                alt={project.imageAlt || project.title}
+                src={currentImage}
+                alt={currentTitle}
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none" />
 
               {/* Badges on image */}
-              <div className="absolute bottom-3 left-4 sm:left-6 flex items-center gap-2">
+              <div className="absolute bottom-3 left-4 sm:left-6 flex flex-wrap items-center gap-2">
                 <span className="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded-md bg-slate-950/80 border border-cyan-500/30 backdrop-blur-sm">
                   {project.category}
                 </span>
                 {project.featured && (
                   <span className="inline-flex items-center gap-1 text-xs font-semibold text-amber-300 px-2.5 py-1 rounded-md bg-amber-950/60 border border-amber-500/30 backdrop-blur-sm">
                     <Sparkles className="w-3 h-3 text-amber-400" />
-                    Featured Project
+                    Featured Case Study
                   </span>
                 )}
               </div>
+
+              {/* Multi-screen pill selector inside modal */}
+              {screens.length > 1 && (
+                <div className="absolute top-4 left-4 z-20 flex items-center gap-1 bg-slate-950/80 p-1 rounded-xl border border-white/10 backdrop-blur-md">
+                  {screens.map((scr, idx) => (
+                    <button
+                      key={scr.id}
+                      onClick={() => setModalScreenIndex(idx)}
+                      className={`px-2.5 py-1 rounded-lg text-[10px] font-mono font-semibold transition-colors ${
+                        modalScreenIndex === idx
+                          ? 'bg-cyan-400 text-slate-950 shadow-sm'
+                          : 'text-slate-400 hover:text-white'
+                      }`}
+                    >
+                      {scr.label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Modal Body */}

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradStats" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#141a2e"/>
+      <stop offset="100%" stop-color="#080c18"/>
+    </linearGradient>
+    <linearGradient id="wormGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="gridPatternStats" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="480" fill="url(#bgGradStats)"/>
+  <rect width="800" height="480" fill="url(#gridPatternStats)"/>
+  <g transform="translate(60, 50)">
+    <rect width="680" height="370" rx="14" fill="#0c1326" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    <rect width="680" height="44" rx="14" fill="#101932"/>
+    <rect y="30" width="680" height="14" fill="#101932"/>
+    <line x1="0" y1="44" x2="680" y2="44" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <circle cx="28" cy="22" r="5" fill="#ef4444" opacity="0.75"/>
+    <circle cx="46" cy="22" r="5" fill="#f59e0b" opacity="0.75"/>
+    <circle cx="64" cy="22" r="5" fill="#10b981" opacity="0.75"/>
+    <rect x="100" y="12" width="480" height="20" rx="6" fill="#1e293b" opacity="0.6"/>
+    <text x="340" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">cricverse.live/match/analytics-worm</text>
+    <g transform="translate(35, 65)">
+      <text x="0" y="22" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="17">Recharts Analytical Engine</text>
+      <text x="0" y="44" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Comparative run-rate progression curve &amp; wagon wheel breakdown</text>
+      <g transform="translate(0, 58)">
+        <rect width="610" height="185" rx="10" fill="#141d38" stroke="rgba(255, 255, 255, 0.08)"/>
+        <!-- Chart axes -->
+        <line x1="50" y1="30" x2="50" y2="140" stroke="#334155" stroke-width="1"/>
+        <line x1="50" y1="140" x2="570" y2="140" stroke="#334155" stroke-width="1"/>
+        <!-- Grid lines -->
+        <line x1="50" y1="105" x2="570" y2="105" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="50" y1="70" x2="570" y2="70" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="2 4"/>
+        <!-- Team 1 Worm (IND) -->
+        <path d="M 50 140 Q 150 120 220 100 T 360 65 T 480 45 T 570 35" fill="none" stroke="url(#wormGrad)" stroke-width="3" stroke-linecap="round"/>
+        <!-- Team 2 Worm (AUS) -->
+        <path d="M 50 140 Q 140 130 240 115 T 370 95 T 470 75 T 570 60" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+        <!-- Labels -->
+        <text x="50" y="160" fill="#64748b" font-size="10" font-family="'JetBrains Mono', monospace">0 OV</text>
+        <text x="180" y="160" fill="#64748b" font-size="10" font-family="'JetBrains Mono', monospace">5 OV</text>
+        <text x="310" y="160" fill="#64748b" font-size="10" font-family="'JetBrains Mono', monospace">10 OV</text>
+        <text x="440" y="160" fill="#64748b" font-size="10" font-family="'JetBrains Mono', monospace">15 OV</text>
+        <text x="560" y="160" fill="#64748b" font-size="10" font-family="'JetBrains Mono', monospace">20 OV</text>
+        <!-- Legend -->
+        <circle cx="440" cy="20" r="4" fill="#38bdf8"/>
+        <text x="450" y="24" fill="#ffffff" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600">IND (10.2 RPO)</text>
+        <circle cx="535" cy="20" r="4" fill="#94a3b8"/>
+        <text x="545" y="24" fill="#94a3b8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">AUS (8.8 RPO)</text>
+      </g>
+    </g>
+  </g>
+</svg>

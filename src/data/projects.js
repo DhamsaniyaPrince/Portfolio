@@ -1,3 +1,8 @@
+import { constructionScreens } from '../assets/projects/construction-management';
+import { cricverseScreens } from '../assets/projects/cricverse';
+import { carDealershipScreens } from '../assets/projects/car-dealership';
+import { airbnbScreens } from '../assets/projects/airbnb-clone';
+
 import cmsPreview from '../assets/projects/construction-management/preview.svg';
 import cricversePreview from '../assets/projects/cricverse/preview.svg';
 import carDealershipPreview from '../assets/projects/car-dealership/preview.svg';
@@ -11,12 +16,18 @@ export const projects = [
     id: "construction-management",
     number: "01",
     title: "Construction Management System",
-    category: "Full Stack",
+    category: "Full Stack / MERN",
     featured: true,
+    visualTheme: "streak",
+    domain: "cms.princedhamsaniya.dev",
+    role: "Full-Stack Architecture & Multi-Role API Engineering",
     description:
-      "A construction management platform designed to help manage construction projects, materials, attendance, equipment, and daily reports through role-based access.",
+      "A role-based platform designed to manage construction projects, materials logistics, workforce attendance, equipment, and daily reports.",
     detailedDescription:
       "A comprehensive management suite built to streamline construction operations. The platform enables distinct administrative, contractor, engineering, and site management workflows, synchronizing material logistics, attendance logs, and daily progress reporting.",
+    whatIBuilt:
+      "Engineered the full-stack MERN architecture from normalized MongoDB schemas to the responsive React UI. Implemented role-based JWT authorization guards, Cloudinary photo uploads for site audits, and automated daily progress reports.",
+    screens: constructionScreens,
     technologies: [
       "React",
       "Tailwind CSS",
@@ -48,12 +59,18 @@ export const projects = [
     id: "cricverse",
     number: "02",
     title: "CricVerse",
-    category: "Full Stack",
+    category: "Full Stack / Real-Time",
     featured: true,
+    visualTheme: "orbit",
+    domain: "cricverse.live",
+    role: "Frontend Architecture & Real-Time Socket Integration",
     description:
-      "A cricket-focused web application with a modern interactive interface and real-time functionality.",
+      "A cricket-focused web application with a modern interactive interface, real-time WebSocket match updates, and analytics curves.",
     detailedDescription:
       "An interactive web platform tailored for cricket enthusiasts featuring real-time event updates, detailed team statistics, and data-driven analytical charts powered by Socket.io and Recharts.",
+    whatIBuilt:
+      "Architected the real-time WebSocket event dispatcher, global state store using Redux Toolkit, and comparative run-rate worm visualizations with Recharts for seamless ball-by-ball broadcast latency.",
+    screens: cricverseScreens,
     technologies: [
       "React",
       "Next.js",
@@ -84,12 +101,18 @@ export const projects = [
     id: "car-dealership",
     number: "03",
     title: "Car-Dealership",
-    category: "Full Stack",
+    category: "Full Stack / Type-Safe",
     featured: true,
+    visualTheme: "assemble",
+    domain: "dealership.admin.internal",
+    role: "Full-Stack Development & Type-Safe Backend Engineering",
     description:
-      "A vehicle management web application built with a modern TypeScript-based backend and React frontend.",
+      "A vehicle management web application built with a modern TypeScript-based backend, Prisma ORM, and React frontend.",
     detailedDescription:
       "A vehicle inventory and dealership management system engineered with end-to-end type safety. Features a strongly typed Express.js backend leveraging Prisma ORM and SQLite, paired with a snappy React Vite frontend.",
+    whatIBuilt:
+      "Constructed the strongly typed Prisma ORM database models, relational SQLite migration pipeline, Express REST endpoints with input validation, and a high-performance React search catalog.",
+    screens: carDealershipScreens,
     technologies: [
       "TypeScript",
       "Express.js",
@@ -116,16 +139,24 @@ export const projects = [
     id: "airbnb-clone",
     number: "04",
     title: "Airbnb Clone",
-    category: "Frontend",
-    featured: false,
+    category: "Frontend Architecture",
+    featured: true,
+    visualTheme: "aperture",
+    domain: "stayhaven.frontend.local",
+    role: "Frontend Interface Engineering & Responsive CSS Architecture",
     description:
-      "A frontend recreation of an Airbnb-style listing experience focused on responsive design and accurate interface implementation.",
+      "A frontend recreation of an Airbnb-style listing experience focused on responsive CSS Grid architecture and pixel-accurate design.",
     detailedDescription:
       "A high-fidelity frontend clone created to master core web fundamentals, responsive CSS grids, flexbox layouts, and dynamic DOM interaction without relying on heavy external UI frameworks.",
+    whatIBuilt:
+      "Implemented a responsive multi-column CSS grid system, interactive category filter tabs, date-range picker mockups, and dynamic booking total fee calculations.",
+    screens: airbnbScreens,
     technologies: [
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "JavaScript",
+      "Responsive Grid",
+      "Flexbox",
     ],
     features: [
       "Pixel-accurate Airbnb style navigation and listing cards",
